@@ -18,7 +18,7 @@ const Spotlight: React.FC<SpotlightProps> = ({
     <div
       className="relative w-full h-[500px] flex items-center justify-center text-white overflow-hidden mb-12"
       style={{ backgroundImage: `url(${imageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-      data-aue-type="Content With Image"
+      data-aue-type="reference"
       data-aue-resource={`urn:aemconnection:${cfPath}/jcr:content/data/master`}
     >
       {/* Background overlay */}
@@ -34,7 +34,7 @@ const Spotlight: React.FC<SpotlightProps> = ({
         </h2>
         <p
           className="text-lg md:text-xl text-gray-100"
-          data-aue-prop="description1" 
+          data-aue-prop="description" 
           data-aue-type="text"
         >
           {description}
